@@ -281,7 +281,7 @@ class UI(App):
             #URL
             with Horizontal(id="url"):
                 yield Static("URL:", id="url_lbl")
-                yield Input(placeholder="https//:", id="url_fld")
+                yield Input(placeholder="https//:", type="text", id="url_fld")
 
             #Formats
             with Horizontal(id="formats"):
