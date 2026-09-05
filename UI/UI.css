@@ -1,0 +1,134 @@
+/*Scroll*/
+#scroll {
+    content-align: center top;
+    max-width: 150;
+}
+
+/* GRID LAYOUT */
+#body {
+    max-width: 140;
+    layout: grid;
+    grid-size: 2;
+    grid-rows: auto auto auto auto;
+    grid-gutter: 1;
+    padding: 1;
+    margin: 1;
+    background: #2F6B6B;
+    color: #FFEFC5;
+    align: center middle;
+}
+
+/*Cells*/
+#header, #run {
+    height: auto;
+    align: center middle;
+    max-width: 100%;
+    column-span: 2;
+}
+
+#url{
+    height: auto;
+    align: center middle;
+    max-width: 100%;
+}
+
+#formats {
+    height: auto;
+    align: right middle;
+    max-width: 35;
+}
+
+#out_sel {
+    height: auto;
+    content-align: left middle;
+    max-width: 105;
+    padding: 0;
+    margin: 0;
+    column-span: 2;
+}
+
+/* TITLE */
+#title {
+    text-style: bold;
+    background: #B2964E;
+    border: heavy #FFB700;
+    color: #FFEFC5;
+    content-align: center middle;
+    max-width: 50;
+    padding: 0;
+    margin: 0;
+}
+
+/* BUTTONS */
+#run_btn, #formats_sel {
+    color: #FFB700;
+    border: heavy #B2964E;
+    background: #3E467A;
+    max-width: 25;
+}
+
+RadioButton.-selected {
+    color: #FFB700;
+    background: #5C70EA;
+}
+
+RadioButton.-on > .toggle--button {
+    color: #FFB700;
+    border: heavy #B2964E;
+    background: #5C70EA;
+}
+
+RadioButton > .toggle--button {
+    color: #FFB700;
+    background: #3E467A;
+}
+
+/*INPUTS*/
+#url_fld {
+    max-width: 100%;
+}
+
+/* LABELS */
+#url_lbl, #run_lbl {
+    content-align: right middle;
+    color: #FFEFC5;
+    max-width: 15;
+}
+
+/* DIRECTORY TREE */
+#fileSelect {
+    height: auto;
+    max-width: 105;
+    background: #3E467A;
+}
+
+#toolbar {
+    height: auto;
+    max-width: 105;
+    max-height: 3;
+    background: #5C70EA;
+    color: #FFEFC5;
+    padding: 0;
+    margin: 0;
+}
+
+#tree {
+    background: #0e1435;
+    height: auto;
+    max-width: 105;
+}
+
+#btn_up {
+    background: #B2964E;
+    color: #FFEFC5;
+    max-width: 5;
+    max-height: 3;
+    padding: 0;
+    margin: 0;
+}
+
+#breadcrumb {
+    max-width: 105;
+    color: #FFEFC5;
+}
+
