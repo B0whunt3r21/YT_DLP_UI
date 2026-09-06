@@ -55,7 +55,10 @@ class API():
 
             elif "youtu.be" in parsed.netloc:
                 return urlunparse(parsed._replace(query=""))
-                
+
+            elif "twitch.tv" in parsed.netloc:
+                return urlunparse(parsed._replace(query=""))
+            
         except Exception:
             pass
             

@@ -252,8 +252,11 @@ class UI(App):
         mode = self.format_selected
         outFolder = self.query_one("#out_sel", FileSelect).value
 
+        self.action_reload()
+
         if url.strip():
             self.run_API(url, mode, outFolder)
+
 
     @work(thread=True)
     def run_API(self, url, mode, outFolder):
