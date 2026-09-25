@@ -37,10 +37,10 @@ class API():
             ydl.download([url])
 
 
-    def sanitizeYoutubeURL(self, url: str) -> str:
+    def sanitizeURL(self, url: str) -> str:
         """
         Removes playlist parameters (&list=, &index=, etc.) while preserving 
-        the core video ID for standard, mobile, and shortened YouTube links.
+        the core video ID.
         """
         try:
             parsed = urlparse(url)

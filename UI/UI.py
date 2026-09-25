@@ -262,7 +262,7 @@ class UI(App):
     def run_API(self, url, mode, outFolder):
         try:
             yt_dlp = API()
-            url = yt_dlp.sanitizeYoutubeURL(url)
+            url = yt_dlp.sanitizeURL(url)
             yt_dlp.download(url, mode, outFolder)
 
             self.notify("Download completed successfully!", title="Success")
